@@ -1,0 +1,45 @@
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #69707d;
+}
+
+.mainHeader {
+  margin-top: 1.75rem;
+}
+
+.mainHeader menu,
+.mainHeader menu ul {
+  display: flex;
+}
+
+.mainHeader menu {
+  justify-content: space-between;
+}
+
+menu nav {
+  display: flex;
+}
+
+.logo {
+  height: 1.25rem;
+
+  margin-right: 3.53rem;
+}
+
+.cart {
+  width: 1.36382rem;
+  height: 1.25rem;
+}
+
+.avatar {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+li + li {
+  margin-left: 2rem;
+}
