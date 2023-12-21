@@ -1,0 +1,9 @@
+.main {
+  width: 100%;
+}
+
+hr {
+  display: inline-block;
+  size: 12px;
+  width: 100%;
+}

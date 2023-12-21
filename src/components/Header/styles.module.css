@@ -8,20 +8,17 @@ li a {
 }
 
 .mainHeader {
+  display: flex;
+  justify-content: space-between;
+
   margin-top: 1.75rem;
 }
 
-.mainHeader menu,
-.mainHeader menu ul {
+.navigation,
+.navigation ul,
+.cartNavigation {
   display: flex;
-}
-
-.mainHeader menu {
-  justify-content: space-between;
-}
-
-menu nav {
-  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -33,6 +30,8 @@ menu nav {
 .cart {
   width: 1.36382rem;
   height: 1.25rem;
+
+  align-self: center;
 }
 
 .avatar {
@@ -40,6 +39,22 @@ menu nav {
   height: 3.125rem;
 }
 
-li + li {
+.navigation li + li {
   margin-left: 2rem;
+}
+
+.cartNavigation li + li {
+  margin-left: 2.89rem;
+}
+
+hr {
+  display: unset;
+  unicode-bidi: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  overflow: unset;
+  border-style: unset;
+  border-width: unset;
 }
