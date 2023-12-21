@@ -47,14 +47,4 @@ li a {
   margin-left: 2.89rem;
 }
 
-hr {
-  display: unset;
-  unicode-bidi: unset;
-  margin-block-start: unset;
-  margin-block-end: unset;
-  margin-inline-start: unset;
-  margin-inline-end: unset;
-  overflow: unset;
-  border-style: unset;
-  border-width: unset;
-}
+

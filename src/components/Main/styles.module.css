@@ -1,9 +1,12 @@
 .main {
   width: 100%;
+  margin-top: 2.12rem;
 }
 
 hr {
   display: inline-block;
-  size: 12px;
+  height: 0.0625rem;
   width: 100%;
+  color: #e4e9f2;
+  opacity: 40%;
 }
