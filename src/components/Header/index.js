@@ -7,40 +7,42 @@ import avatar from "../../assets/images/image-avatar.png";
 function Header() {
   return (
     <header className={styles.mainHeader}>
-      <nav className={styles.navigation}>
-        <img src={logo} alt="logo" className={styles.logo} />
-        <ul>
-          <li>
-            <a href="#">Collections</a>
-          </li>
-          <li>
-            <a href="#">Men</a>
-          </li>
-          <li>
-            <a href="#">Women</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <nav>
-        <ul className={styles.cartNavigation}>
-          <li>
-            <a href="#">
-              <img src={iconCart} alt="cart" className={styles.cart} />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src={avatar} alt="user avatar" className={styles.avatar} />
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <menu>
+        <nav className={styles.navigation}>
+          <img src={logo} alt="logo" className={styles.logo} />
+          <ul>
+            <li>
+              <a href="#">Collections</a>
+            </li>
+            <li>
+              <a href="#">Men</a>
+            </li>
+            <li>
+              <a href="#">Women</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul className={styles.cartNavigation}>
+            <li>
+              <a href="#">
+                <img src={iconCart} alt="cart" className={styles.cart} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={avatar} alt="user avatar" className={styles.avatar} />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </menu>
     </header>
   );
 }
