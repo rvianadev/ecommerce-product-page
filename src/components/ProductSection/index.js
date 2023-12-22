@@ -10,6 +10,10 @@ import imageProduct2Thumbnail from "../../assets/images/image-product-2-thumbnai
 import imageProduct3Thumbnail from "../../assets/images/image-product-3-thumbnail.jpg";
 import imageProduct4Thumbnail from "../../assets/images/image-product-4-thumbnail.jpg";
 
+import iconMinus from "../../assets/images/icon-minus.svg";
+import iconPlus from "../../assets/images/icon-plus.svg";
+import iconCart from "../../assets/images/icon-cart-white.svg";
+
 function ProductSection() {
   return (
     <section className={styles.productSection}>
@@ -39,7 +43,22 @@ function ProductSection() {
           <span className={styles.discount}>50%</span>
           <span className={styles.realPrice}>$250.00</span>
         </div>
-        <div className={styles.productButtons}></div>
+        <div className={styles.productButtons}>
+          <div className={styles.quantityButton}>
+            <button className={styles.buttonMinus}>
+              <img src={iconMinus} alt="icon minus" />
+            </button>
+            <span>0</span>
+            <button className={styles.buttonPlus}>
+              <img src={iconPlus} alt="icon plus" />
+            </button>
+          </div>
+
+          <div className={styles.addToCartButton}>
+            <img src={iconCart} alt="icon cart" />
+            <span>Add to cart</span>
+          </div>
+        </div>
       </aside>
     </section>
   );
