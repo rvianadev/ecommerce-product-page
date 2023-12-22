@@ -20,7 +20,6 @@ li a {
   width: 100%;
   height: 0.0625rem;
   background-color: #e4e9f2;
-  margin-top: 3rem;
 }
 
 menu {
@@ -33,6 +32,10 @@ menu {
 .cartNavigation {
   display: flex;
   align-items: center;
+}
+
+.navigation a:hover {
+  color: gold;
 }
 
 .logo {
