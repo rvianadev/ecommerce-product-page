@@ -34,8 +34,22 @@ menu {
   align-items: center;
 }
 
-.navigation a:hover {
-  color: gold;
+.navigation a {
+  position: relative;
+}
+
+.navigation a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.25rem;
+  background: #ff7e1b;
+  margin-top: 2.9rem;
+  position: absolute;
+}
+
+.navigation a:hover::after {
+  width: 100%;
 }
 
 .logo {
@@ -52,12 +66,23 @@ menu {
 }
 
 .avatar {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 3.25rem;
+  height: 3.25rem;
+
+  border: 2px solid #fff;
+  border-radius: 3.125rem;
+}
+
+.avatar:hover {
+  border: 2px solid #ff7e1b;
 }
 
 .navigation li + li {
   margin-left: 2rem;
+}
+
+.cartNavigation svg:hover path {
+  fill: #1d2026;
 }
 
 .cartNavigation li + li {
