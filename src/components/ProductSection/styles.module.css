@@ -26,12 +26,18 @@
 .thumbnailsContainer {
   display: flex;
   gap: 1.94rem;
-
-  max-width: 5.5rem;
 }
 
 .thumbnailsContainer img {
   border-radius: 0.625rem;
+  border: 2px solid #ffffff;
+  max-width: 5.5rem;
+  /* max-width: 6.125rem; */
+}
+
+.thumbnailsContainer img:hover {
+  opacity: 50%;
+  border: 2px solid #ff7e1b;
 }
 
 .productInformationsContainer {

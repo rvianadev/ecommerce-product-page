@@ -22,10 +22,18 @@ function ProductSection() {
           <img src={imageProduct1} alt="Sneaker photo 1" />
         </div>
         <div className={styles.thumbnailsContainer}>
-          <img src={imageProduct1Thumbnail} alt="Sneaker thumbnail 1" />
-          <img src={imageProduct2Thumbnail} alt="Sneaker thumbnail 2" />
-          <img src={imageProduct3Thumbnail} alt="Sneaker thumbnail 3" />
-          <img src={imageProduct4Thumbnail} alt="Sneaker thumbnail 4" />
+          <a href="#">
+            <img src={imageProduct1Thumbnail} alt="Sneaker thumbnail 1" />
+          </a>
+          <a href="#">
+            <img src={imageProduct2Thumbnail} alt="Sneaker thumbnail 2" />
+          </a>
+          <a href="#">
+            <img src={imageProduct3Thumbnail} alt="Sneaker thumbnail 3" />
+          </a>
+          <a href="#">
+            <img src={imageProduct4Thumbnail} alt="Sneaker thumbnail 4" />
+          </a>
         </div>
       </article>
       <aside className={styles.productInformationsContainer}>
