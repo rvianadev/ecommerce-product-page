@@ -19,18 +19,13 @@
   max-width: 27.8125rem;
 }
 
-.largeImageContainer img {
+#largeImageContainer img {
   border-radius: 0.9375rem;
 }
 
 .thumbnailsContainer {
   display: flex;
   justify-content: space-between;
-}
-
-.thumbnailsContainer div:hover {
-  border: 2px solid #ff7e1b;
-  border-radius: 0.625rem;
 }
 
 .thumbnailsContainer img {

@@ -15,23 +15,29 @@ import iconPlus from "../../assets/images/icon-plus.svg";
 import iconCart from "../../assets/images/icon-cart-white.svg";
 
 function ProductSection() {
+  const showLargeImage = (image) => {
+    const container = document.getElementById(styles.largeImageContainer);
+
+    container.innerHTML = "<img src='" + image + "' alt='large product image'>";
+  };
+
   return (
     <section className={styles.productSection}>
       <article className={styles.productCardsContainer}>
-        <div className={styles.largeImageContainer}>
-          <img src={imageProduct1} alt="Sneaker photo 1" />
+        <div id={styles.largeImageContainer}>
+          <img src={imageProduct1} alt="Large product image" />
         </div>
         <div className={styles.thumbnailsContainer}>
-          <a href="#">
+          <a href="#" onClick={() => showLargeImage(imageProduct1)}>
             <img src={imageProduct1Thumbnail} alt="Sneaker thumbnail 1" />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => showLargeImage(imageProduct2)}>
             <img src={imageProduct2Thumbnail} alt="Sneaker thumbnail 2" />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => showLargeImage(imageProduct3)}>
             <img src={imageProduct3Thumbnail} alt="Sneaker thumbnail 3" />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => showLargeImage(imageProduct4)}>
             <img src={imageProduct4Thumbnail} alt="Sneaker thumbnail 4" />
           </a>
         </div>
