@@ -25,18 +25,23 @@
 
 .thumbnailsContainer {
   display: flex;
-  gap: 1.94rem;
+  justify-content: space-between;
+}
+
+.thumbnailsContainer div:hover {
+  border: 2px solid #ff7e1b;
+  border-radius: 0.625rem;
 }
 
 .thumbnailsContainer img {
-  border-radius: 0.625rem;
-  border: 2px solid #ffffff;
   max-width: 5.5rem;
-  /* max-width: 6.125rem; */
+
+  border-radius: 0.625rem;
 }
 
 .thumbnailsContainer img:hover {
-  opacity: 50%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
   border: 2px solid #ff7e1b;
 }
 

@@ -38,6 +38,10 @@ menu {
   position: relative;
 }
 
+.navigation a:hover {
+  color: #1d2026;
+}
+
 .navigation a::after {
   content: "";
   display: block;
