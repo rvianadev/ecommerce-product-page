@@ -1,0 +1,29 @@
+.productCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 43.84%;
+  max-width: 27.8125rem;
+}
+
+#largeImageContainer img {
+  border-radius: 0.9375rem;
+}
+
+.thumbnailsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbnailsContainer img {
+  max-width: 5.5rem;
+
+  border-radius: 0.625rem;
+}
+
+.thumbnailsContainer img:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+  border: 2px solid #ff7e1b;
+}

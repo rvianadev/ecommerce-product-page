@@ -1,0 +1,170 @@
+.productInformationsContainer {
+  width: 43.84%;
+  max-width: 27.8125rem;
+}
+
+.productDescription {
+}
+
+.descriptionSubtitle {
+  color: #ff7e1b;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+
+  display: inline-block;
+  margin-bottom: 1.69rem;
+}
+
+.productTitle {
+  color: #1d2026;
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem; /* 109.091% */
+
+  margin-bottom: 2rem;
+}
+
+.descriptionText {
+  color: #69707d;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+
+  margin-bottom: 1.75rem;
+}
+
+.productPrice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 40%;
+
+  margin-bottom: 2rem;
+}
+
+.price,
+.discount {
+  display: inline-block;
+}
+
+.price {
+  color: #1d2026;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-right: 1rem;
+}
+
+.discount {
+  color: #ff7e1b;
+  background-color: #ffeee2;
+  border-radius: 0.375rem;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 0.25rem 0.5rem;
+}
+
+.realPrice {
+  color: #b6bcc8;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.625rem; /* 162.5% */
+  text-decoration: line-through;
+}
+
+.productButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.quantityButton {
+  display: flex;
+  /* gap: 2.84rem; */
+  justify-content: space-between;
+  align-items: center;
+
+  width: 35.28%;
+  max-width: 9.8125rem;
+
+  border-radius: 0.625rem;
+  background: #f6f8fd;
+
+  padding: 0.755rem 0.375rem;
+}
+
+.quantityButton span {
+  color: #1d2026;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.buttonMinus,
+.buttonPlus {
+  border: none;
+  background-color: unset;
+
+  padding: 10px;
+}
+
+.buttonMinus:hover,
+.buttonPlus:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.buttonMinus {
+  display: flex;
+}
+
+.addToCartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  flex-grow: 1;
+
+  border-radius: 0.625rem;
+  background: #ff7e1b;
+  box-shadow: 0px 20px 50px -20px #ff7e1b;
+
+  width: 61.12%;
+  max-width: 17rem;
+
+  border: none;
+  cursor: pointer;
+}
+
+.addToCartButton:hover {
+  background-color: #ffab6a;
+}
+
+.addToCartButton img {
+  width: 1.09106rem;
+  height: 1rem;
+  fill: #fff;
+}
+
+.addToCartButton span {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

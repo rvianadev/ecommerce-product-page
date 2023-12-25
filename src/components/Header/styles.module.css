@@ -11,7 +11,7 @@ li a {
   display: flex;
   flex-direction: column;
 
-  margin-top: 1.75rem;
+  /* margin-top: 1.75rem; */
 }
 
 .mainHeader::after {
