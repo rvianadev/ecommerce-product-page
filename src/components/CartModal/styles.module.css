@@ -12,6 +12,9 @@
 }
 
 .cartHeader {
+  height: 26.56%;
+  max-height: 4.25rem;
+  width: 100%;
 }
 
 .cartHeader::after {
@@ -23,6 +26,8 @@
 }
 
 .cartTitle {
+  display: block;
+
   color: #1d2026;
   font-size: 1rem;
   font-style: normal;
@@ -31,4 +36,22 @@
 
   padding-top: 1.5rem;
   padding-left: 1.5rem;
+}
+
+.cartItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 73.44%;
+  max-height: 10.75rem;
+}
+
+.cartItems span {
+  color: #69707d;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.625rem; /* 162.5% */
 }

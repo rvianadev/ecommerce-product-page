@@ -6,6 +6,9 @@ function CartModal() {
       <header className={styles.cartHeader}>
         <span className={styles.cartTitle}>Cart</span>
       </header>
+      <div className={styles.cartItems}>
+        <span>Your cart is empty.</span>
+      </div>
     </div>
   );
 }
