@@ -1,6 +1,13 @@
+import { useContext, useState } from "react";
 import styles from "./styles.module.css";
+import { CartContext } from "../../contexts/Cart";
 
 function CartModal() {
+  const isActive = useContext(CartContext);
+
+  const [showModal, setShowModal] = useState(isActive);
+  console.log(showModal);
+
   return (
     <div className={styles.cartModal}>
       <header className={styles.cartHeader}>
