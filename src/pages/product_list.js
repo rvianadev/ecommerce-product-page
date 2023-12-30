@@ -3,7 +3,10 @@ import { useState, useEffect } from "react";
 import Container from "../components/Container";
 import Header from "../components/Header";
 import { ListContext } from "../contexts/List";
-import ProductListWrapper from "../components/ProductListWrapper";
+import ProductsListWrapper from "../components/ProductsListWrapper";
+import ProductsListCard from "../components/ProductsListCard";
+
+import productImage from "../assets/images/image-product-1.jpg";
 
 import "../globals.css";
 
@@ -17,7 +20,7 @@ function ProductList() {
   const [productList, setProductList] = useState([]);
 
   const getProductList = async () => {
-    await api.get().then((response) => {
+    await api.get("photos?_limit=14").then((response) => {
       setProductList(response.data);
     });
   };
@@ -30,19 +33,40 @@ function ProductList() {
     <ListContext.Provider value={{ productList, setProductList }}>
       <Container>
         <Header />
-        <ProductListWrapper>
+        <ProductsListWrapper>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <h2>Sneaker</h2>
+
+            <a
+              href="/product/123"
+              style={{ cursor: "pointer", textDecoration: "none" }}
+            >
+              <img
+                src={productImage}
+                style={{
+                  width: 9.375 + "rem",
+                  borderRadius: 0.9375 + "rem",
+                }}
+              />
+            </a>
+          </div>
+
           {productList.map((value, index) => {
             return (
-              <div key={index}>
-                <h2>{value.title}</h2>
-                <a src={value.url} key={index}>
-                  Clique aqui
-                </a>
-                <img src={value.thumbnailUrl} />
-              </div>
+              <ProductsListCard
+                productId={index}
+                thumbnailUrl={value.thumbnailUrl}
+                url={value.url}
+              />
             );
           })}
-        </ProductListWrapper>
+        </ProductsListWrapper>
       </Container>
     </ListContext.Provider>
   );

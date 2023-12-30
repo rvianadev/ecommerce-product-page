@@ -1,0 +1,16 @@
+.productsListCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productsListCard img {
+  max-width: 9.375rem;
+
+  border-radius: 0.9375rem;
+}
+
+.productsListCard a {
+  cursor: pointer;
+  text-decoration: none;
+}

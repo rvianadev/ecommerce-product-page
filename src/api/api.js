@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiURL = "https://jsonplaceholder.typicode.com/photos?_limit=20";
+const apiURL = "https://jsonplaceholder.typicode.com";
 
 const api = axios.create({
   baseURL: apiURL,

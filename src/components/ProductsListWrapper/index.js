@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 
-function ProductListWrapper({ children }) {
+function ProductsListWrapper({ children }) {
   return <div className={styles.productListWrapper}>{children}</div>;
 }
 
-export default ProductListWrapper;
+export default ProductsListWrapper;
