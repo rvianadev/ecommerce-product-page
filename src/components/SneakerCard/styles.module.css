@@ -1,0 +1,22 @@
+.sneakerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sneakerCard a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sneakerCard img {
+  width: 9.375rem;
+  border-radius: 0.9375rem;
+}
+
+.sneakerCard img:hover {
+  opacity: 0.5;
+  transition: opacity 0.4s;
+
+  border: 2px solid #ff7e1b;
+}

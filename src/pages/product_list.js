@@ -5,8 +5,7 @@ import Header from "../components/Header";
 import { ListContext } from "../contexts/List";
 import ProductsListWrapper from "../components/ProductsListWrapper";
 import ProductsListCard from "../components/ProductsListCard";
-
-import productImage from "../assets/images/image-product-1.jpg";
+import SneakerCard from "../components/SneakerCard";
 
 import "../globals.css";
 
@@ -34,29 +33,7 @@ function ProductList() {
       <Container>
         <Header />
         <ProductsListWrapper>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <h2>Sneaker</h2>
-
-            <a
-              href="/product/123"
-              style={{ cursor: "pointer", textDecoration: "none" }}
-            >
-              <img
-                src={productImage}
-                style={{
-                  width: 9.375 + "rem",
-                  borderRadius: 0.9375 + "rem",
-                }}
-              />
-            </a>
-          </div>
-
+          <SneakerCard />
           {productList.map((value, index) => {
             return (
               <ProductsListCard

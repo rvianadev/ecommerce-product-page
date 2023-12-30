@@ -24,7 +24,7 @@ function Header() {
           <img src={logo} alt="logo" className={styles.logo} />
           <ul>
             <li>
-              <a href="#">Collections</a>
+              <a href="/">Collections</a>
             </li>
             <li>
               <a href="#">Men</a>
