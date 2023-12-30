@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.productsListCard h2 {
+  color: #1d2026;
+}
+
 .productsListCard img {
   max-width: 9.375rem;
 
