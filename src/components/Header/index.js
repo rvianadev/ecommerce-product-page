@@ -3,7 +3,6 @@ import { useContext, useState } from "react";
 import styles from "./styles.module.css";
 
 import logo from "../../assets/images/logo.svg";
-import iconCart from "../../assets/images/icon-cart.svg";
 import avatar from "../../assets/images/image-avatar.png";
 import { CartContext } from "../../contexts/Cart";
 

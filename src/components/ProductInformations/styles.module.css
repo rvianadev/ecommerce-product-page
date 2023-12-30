@@ -3,9 +3,6 @@
   max-width: 27.8125rem;
 }
 
-.productDescription {
-}
-
 .descriptionSubtitle {
   color: #ff7e1b;
   font-size: 0.8125rem;
@@ -167,4 +164,16 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+@media (max-width: 1268px) {
+  .productPrice {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 921px) {
+  .productPrice {
+    max-width: 75%;
+  }
 }

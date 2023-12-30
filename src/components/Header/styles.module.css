@@ -56,8 +56,6 @@ menu {
 }
 
 .logo {
-  height: 1.25rem;
-
   margin-right: 3.53rem;
 }
 
@@ -90,4 +88,15 @@ menu {
 
 .cartNavigation li + li {
   margin-left: 2.89rem;
+}
+
+@media (max-width: 950px) {
+  .logo {
+    max-width: 18%;
+    margin-right: 2.53rem;
+  }
+
+  .cartNavigation li + li {
+    margin-left: 1.69rem;
+  }
 }
