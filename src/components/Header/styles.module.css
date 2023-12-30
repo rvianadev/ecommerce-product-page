@@ -100,3 +100,9 @@ menu {
     margin-left: 1.69rem;
   }
 }
+
+@media (max-width: 870px) {
+  .navigation ul {
+    display: none;
+  }
+}
