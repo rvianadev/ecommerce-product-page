@@ -37,6 +37,7 @@ function ProductList() {
           {productList.map((value, index) => {
             return (
               <ProductsListCard
+                key={index}
                 productId={index}
                 thumbnailUrl={value.thumbnailUrl}
                 url={value.url}
