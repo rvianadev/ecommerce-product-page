@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import ProductSection from "../components/ProductSection";
 import CartModal from "../components/CartModal";
 
-import CartContext from "../contexts/Cart";
+import { CartProvider } from "../contexts/Cart";
 
 import "../globals.css";
 /* import { useParams } from "react-router-dom"; */
@@ -13,14 +13,12 @@ import "../globals.css";
 function Product() {
   /*   const { id: product_id } = useParams(); */
 
-  const [cartActive, setCartActive] = useState(false);
-
   return (
     <Container>
-      <CartContext.Provider value={{ cartActive, setCartActive }}>
+      <CartProvider>
         <Header />
         <CartModal />
-      </CartContext.Provider>
+      </CartProvider>
       <ProductSection />
     </Container>
   );
