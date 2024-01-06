@@ -8,12 +8,27 @@ import {
 } from "react-router-dom";
 import Product from "./pages/product";
 import ProductList from "./pages/product_list";
+import { CartProvider } from "./contexts/Cart";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<ProductList />} />
-      <Route path="product/:id" element={<Product />} />
+      <Route
+        path="/"
+        element={
+          <CartProvider>
+            <ProductList />
+          </CartProvider>
+        }
+      />
+      <Route
+        path="product/:id"
+        element={
+          <CartProvider>
+            <Product />
+          </CartProvider>
+        }
+      />
     </>
   )
 );

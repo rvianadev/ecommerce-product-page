@@ -26,6 +26,12 @@ menu {
   justify-content: space-between;
 }
 
+.iconMenuMobile {
+  margin-right: 3rem;
+
+  display: none;
+}
+
 .navigation,
 .navigation ul,
 .cartNavigation {
@@ -41,7 +47,7 @@ menu {
   color: #1d2026;
 }
 
-.navigation a::after {
+.navigation a:not(.iconMenuMobile)::after {
   content: "";
   display: block;
   width: 0;
@@ -102,7 +108,19 @@ menu {
 }
 
 @media (max-width: 870px) {
+  .iconMenuMobile {
+    display: block;
+  }
+
+  .logo {
+    max-width: 100%;
+  }
+
   .navigation ul {
     display: none;
+  }
+
+  .cartNavigation li + li {
+    margin-left: 2.69rem;
   }
 }

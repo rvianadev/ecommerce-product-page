@@ -6,16 +6,13 @@ import { ListContext } from "../contexts/List";
 import ProductsListWrapper from "../components/ProductsListWrapper";
 import ProductsListCard from "../components/ProductsListCard";
 import SneakerCard from "../components/SneakerCard";
+import CartModal from "../components/CartModal";
 
 import "../globals.css";
 
 import api from "../api/api";
 
 function ProductList() {
-  // ROTA GET EM: https://jsonplaceholder.typicode.com/photos
-  // useEffect rodando um get com axios (EM UMA LINHA DE CODIGO)
-  // setProductList(RESPOSTA DO AXIOS)
-
   const [productList, setProductList] = useState([]);
 
   const getProductList = async () => {
@@ -45,6 +42,7 @@ function ProductList() {
             );
           })}
         </ProductsListWrapper>
+        <CartModal />
       </Container>
     </ListContext.Provider>
   );

@@ -1,8 +1,15 @@
 import styles from "./styles.module.css";
+import { CartContext } from "../../contexts/Cart";
+import { useContext } from "react";
 
 function CartModal() {
+  const { isOpen } = useContext(CartContext);
+
   return (
-    <div className={styles.cartModal}>
+    <div
+      className={styles.cartModal}
+      style={isOpen ? { display: "flex" } : { display: "none" }}
+    >
       <header className={styles.cartHeader}>
         <span className={styles.cartTitle}>Cart</span>
       </header>
