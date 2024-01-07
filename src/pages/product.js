@@ -16,9 +16,9 @@ function Product() {
 
   const { isOpen } = useContext(CartContext);
 
-  useEffect(() => {
-    console.log(isOpen);
-  }, [isOpen]);
+  // useEffect(() => {
+  //   console.log(isOpen);
+  // }, [isOpen]);
 
   return (
     <Container>
