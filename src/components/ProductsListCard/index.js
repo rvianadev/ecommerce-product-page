@@ -1,10 +1,12 @@
 import styles from "./styles.module.css";
 
 function ProductsListCard(props) {
+  const productId = props.productId + 2;
+
   return (
     <div className={styles.productsListCard}>
-      <h2>Product {props.productId + 2}</h2>
-      <a href={props.url} target="_blank" rel="noreferrer noopener">
+      <h2>Product {productId}</h2>
+      <a href={`/product/${productId}`}>
         <img src={props.thumbnailUrl} />
       </a>
     </div>

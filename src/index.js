@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Product from "./pages/product";
+import ProductAPI from "./pages/productAPI";
 import ProductList from "./pages/product_list";
 import { CartProvider } from "./contexts/Cart";
 
@@ -22,10 +23,18 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path="product/:id"
+        path="product/sneaker"
         element={
           <CartProvider>
             <Product />
+          </CartProvider>
+        }
+      />
+      <Route
+        path="product/:id"
+        element={
+          <CartProvider>
+            <ProductAPI />
           </CartProvider>
         }
       />

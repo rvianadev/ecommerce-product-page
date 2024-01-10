@@ -7,7 +7,7 @@ function SneakerCard() {
     <div className={styles.sneakerCard}>
       <h2>Sneaker</h2>
 
-      <a href="/product/123">
+      <a href="/product/sneaker">
         <img src={productImage} />
       </a>
     </div>
