@@ -1,5 +1,3 @@
-import { useContext, useEffect, useState } from "react";
-
 import styles from "./styles.module.css";
 
 import logo from "../../assets/images/logo.svg";
