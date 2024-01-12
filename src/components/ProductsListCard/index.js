@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 
 function ProductsListCard(props) {
-  const productId = props.productId + 2;
+  const productId = props.productId + 1;
 
   return (
     <div className={styles.productsListCard}>
