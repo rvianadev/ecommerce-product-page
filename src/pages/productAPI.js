@@ -5,7 +5,6 @@ import Container from "../components/Container";
 import Header from "../components/Header";
 
 import CartModal from "../components/CartModal";
-
 import api from "../api/api";
 
 import "../globals.css";
