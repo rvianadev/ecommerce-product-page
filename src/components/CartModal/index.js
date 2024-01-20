@@ -1,9 +1,9 @@
 import styles from "./styles.module.css";
-import { CartContext } from "../../contexts/Cart";
-import { useContext } from "react";
+import { useCart } from "../../hooks/useCart";
 
 function CartModal() {
-  const { isOpen } = useContext(CartContext);
+  // const { isOpen } = useContext(CartContext);
+  const { isOpen } = useCart();
 
   return (
     <div
